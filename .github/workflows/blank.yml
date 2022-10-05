@@ -129,10 +129,15 @@ jobs:
               "id": "anypoint-exchange-v3",
               "username": "${{ secrets.ANYPOINT_USERNAME }}",
               "password": "${{ secrets.ANYPOINT_PASSWORD }}"
+          },
+          {
+              "id": "cloudhub-deploy",
+              "username": "${{ secrets.ANYPOINT_USERNAME }}",
+              "password": "${{ secrets.ANYPOINT_PASSWORD }}"
           }]
     - name: Deploy to CloudHub 2
       env:
-        AUTHOR: "Andres Morales"
+        AUTHOR: "Jose Andres Gonzalez"
       run: |
         artifactName=$(ls *.jar | head -1)
         mvn deploy --file check-in-papi-app/pom.xml -DmuleDeploy \
