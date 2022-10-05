@@ -51,7 +51,7 @@
 						  <server>cloudhub-deploy</server>
 						  <replicas>1</replicas>
 						  <vCores>0.1</vCores>
-						  <applicationName>${project.name}</applicationName>
+						  <applicationName>check-in-auto</applicationName>
 						  <deploymentTimeout>240000</deploymentTimeout>
 						  <properties>
 						  <anypoint.platform.client_id>${ap.client_id}</anypoint.platform.client_id>
